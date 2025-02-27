@@ -1,15 +1,35 @@
-import React from "react";
-function Mycolor (prop) { 
+//import React, { useState } from "react";
+// function Mycolor (prop) {
+   // return (
+   // <h1>my fav color s, {prop.color}</h1>);
+//}
+//function App() {
+   // return(
+   // <div>
+    //    <Mycolor/>
+    //    <Mycolor color = "red"/>
+  //  </div>);
+    
+//}
+
+import React, { useState } from "react";
+function Color() {
+    const [color, setColor] = useState("blue");
+
     return (
-        <h1>my fav color is {prop.color}</h1>
+        <>
+            <h1>My favorite color is {color}!</h1>
+            <button type="button" onClick={() => setColor("blue")}>
+                Blue
+            </button>
+            <button type="button" onClick={() => setColor("red")}>
+                Red
+            </button>
+            <button type="button" onClick={() => setColor("green")}>
+                Green
+            </button>
+        </>
     );
 }
-function App() {
-    return(
-    <div>
-        <Mycolor/>
-        <Mycolor color = "red"/>
-    </div>);
-    
-}
+
 export default App;
