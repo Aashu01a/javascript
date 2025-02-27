@@ -1,4 +1,4 @@
-//import React, { useState } from "react";
+import React, { useState } from "react";
 // function Mycolor (prop) {
    // return (
    // <h1>my fav color s, {prop.color}</h1>);
@@ -11,8 +11,6 @@
   //  </div>);
     
 //}
-
-import React, { useState } from "react";
 function Color() {
     const [color, setColor] = useState("blue");
 
