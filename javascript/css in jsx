@@ -1,7 +1,8 @@
 import React from "react";
 function Mycolor (prop) { 
     return (
-    <h1>my fav color s, {prop.color}</h1>);
+        <h1>my fav color is {prop.color}</h1>
+    );
 }
 function App() {
     return(
