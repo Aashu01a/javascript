@@ -1,0 +1,23 @@
+function Color() {
+    const [color, setColor] = useState("blue");
+    const [color, setColor] = useState(0);
+
+
+    return (
+        <>
+            <h1>My favorite color is {color}!</h1>
+            <p>Button clicked {count} times</p>
+            <button type="button" onClick={() => { setColor("blue"); setCount(count + 1); }}>
+                Blue
+            </button>
+            <button type="button" onClick={() => { setColor("red"); setCount(count + 1); }}>
+                Red
+            </button>
+            <button type="button" onClick={() => { setColor("green"); setCount(count + 1); }}>
+                Green
+            </button>
+        </>
+    );
+}
+
+export default Color;
