@@ -2,8 +2,8 @@ function Color() {
     const [color, setColor] = useState("blue");
     const [color, setColor] = useState(0);
 
-function App() {
-    return (
+    function App() {
+        return (
         <>
             <h1>My favorite color is {color}!</h1>
             <p>Button clicked {count} times</p>
@@ -20,5 +20,4 @@ function App() {
     );
 }
 }
-
 export default Color;
